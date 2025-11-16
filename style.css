@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+/* Base Navigation Bar Styles */
+#navbar {
+    position: fixed; /* Fixed position so it stays at the top */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    /* Initial styles (before scroll) */
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.4s ease, color 0.4s ease; /* Smooth transitions */
+    z-index: 1000;
+}
+
+#navbar.scrolled {
+    /* Styles when scrolled past a certain point */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark font color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.logo {
+    text-align: left;
+    font-weight: bold;
+    font-family:sans-serif;
+    font-size: larger;
+    
+}
+     
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from the nav parent */
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+#navbar ul li a:hover {
+    color: #007BFF; /* Blue hover color (works in both states) */
+}
+
+/* Content Sections (for demonstration purposes) */
+.content-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* Offset content below the fixed navbar */
+}
+
+#home {
+    background-color: #34495e;
+    color: white;
+}
+
+#about {
+    background-color: #ecf0f1;
+}
+
+#services {
+    background-color: #95a5a6;
+}
+
+#contact {
+    background-color: #34495e;
+    color: white;
+}
